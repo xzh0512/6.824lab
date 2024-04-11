@@ -61,18 +61,21 @@ func TestReElection2A(t *testing.T) {
 
 	// if the leader disconnects, a new one should be elected.
 	cfg.disconnect(leader1)
-	cfg.checkOneLeader()
-
+	PrettyDebug(dTimer, "----------------leader:%v断开连接,选一个新领导人中.....-----------------------", leader1)
+	newleader := cfg.checkOneLeader()
+	PrettyDebug(dTimer, "----------------leader断开连接,新leader:%v-----------------------", newleader)
 	// if the old leader rejoins, that shouldn't
 	// disturb the new leader. and the old leader
 	// should switch to follower.
 	cfg.connect(leader1)
+	PrettyDebug(dTimer, "----------------leader:%v重新连接选新领导人中.....-----------------------", leader1)
 	leader2 := cfg.checkOneLeader()
-
+	PrettyDebug(dTimer, "----------------leader:%v重连接成功,新leader是:%v-----------------------", leader1, leader2)
 	// if there's no quorum, no new leader should
 	// be elected.
 	cfg.disconnect(leader2)
 	cfg.disconnect((leader2 + 1) % servers)
+
 	time.Sleep(2 * RaftElectionTimeout)
 
 	// check that the one connected server
@@ -81,8 +84,9 @@ func TestReElection2A(t *testing.T) {
 
 	// if a quorum arises, it should elect a leader.
 	cfg.connect((leader2 + 1) % servers)
+	PrettyDebug(dTimer, "----------------新leader上任中。。。。。---------------------")
 	cfg.checkOneLeader()
-
+	PrettyDebug(dTimer, "----------------成功选出新任领导人----------------------")
 	// re-join of last node shouldn't prevent leader from existing.
 	cfg.connect(leader2)
 	cfg.checkOneLeader()
@@ -146,10 +150,8 @@ func TestBasicAgree2B(t *testing.T) {
 	cfg.end()
 }
 
-//
 // check, based on counting bytes of RPCs, that
 // each command is sent to each peer just once.
-//
 func TestRPCBytes2B(t *testing.T) {
 	servers := 3
 	cfg := make_config(t, servers, false, false)
@@ -181,9 +183,7 @@ func TestRPCBytes2B(t *testing.T) {
 	cfg.end()
 }
 
-//
 // test just failure of followers.
-//
 func For2023TestFollowerFailure2B(t *testing.T) {
 	servers := 3
 	cfg := make_config(t, servers, false, false)
@@ -228,9 +228,7 @@ func For2023TestFollowerFailure2B(t *testing.T) {
 	cfg.end()
 }
 
-//
 // test just failure of leaders.
-//
 func For2023TestLeaderFailure2B(t *testing.T) {
 	servers := 3
 	cfg := make_config(t, servers, false, false)
@@ -270,10 +268,8 @@ func For2023TestLeaderFailure2B(t *testing.T) {
 	cfg.end()
 }
 
-//
 // test that a follower participates after
 // disconnect and re-connect.
-//
 func TestFailAgree2B(t *testing.T) {
 	servers := 3
 	cfg := make_config(t, servers, false, false)
@@ -294,7 +290,7 @@ func TestFailAgree2B(t *testing.T) {
 	time.Sleep(RaftElectionTimeout)
 	cfg.one(104, servers-1, false)
 	cfg.one(105, servers-1, false)
-
+	PrettyDebug(dTimer, "--------------服务器S%v已经重新连接-----------------------------------", (leader+1)%servers)
 	// re-connect
 	cfg.connect((leader + 1) % servers)
 
@@ -472,7 +468,7 @@ func TestRejoin2B(t *testing.T) {
 	// leader network failure
 	leader1 := cfg.checkOneLeader()
 	cfg.disconnect(leader1)
-
+	PrettyDebug(dTimer, "-----------------------leader:S%v断开连接---------------", leader1)
 	// make old leader try to agree on some entries
 	cfg.rafts[leader1].Start(102)
 	cfg.rafts[leader1].Start(103)
@@ -484,15 +480,15 @@ func TestRejoin2B(t *testing.T) {
 	// new leader network failure
 	leader2 := cfg.checkOneLeader()
 	cfg.disconnect(leader2)
-
+	PrettyDebug(dTimer, "-----------------------leader:S%v断开连接---------------", leader2)
 	// old leader connected again
 	cfg.connect(leader1)
-
+	PrettyDebug(dTimer, "-----------------------leader:S%第一任leader连接---------------", leader1)
 	cfg.one(104, 2, true)
 
 	// all together now
 	cfg.connect(leader2)
-
+	PrettyDebug(dTimer, "-----------------------leader:S%第二任leader连接---------------", leader2)
 	cfg.one(105, servers, true)
 
 	cfg.end()
@@ -782,14 +778,14 @@ func TestPersist32C(t *testing.T) {
 	cfg.one(101, 3, true)
 
 	leader := cfg.checkOneLeader()
-	cfg.disconnect((leader + 2) % servers)
+	cfg.disconnect((leader + 2) % servers) //断1
 
-	cfg.one(102, 2, true)
+	cfg.one(102, 2, true) //插入102
 
-	cfg.crash1((leader + 0) % servers)
-	cfg.crash1((leader + 1) % servers)
-	cfg.connect((leader + 2) % servers)
-	cfg.start1((leader+0)%servers, cfg.applier)
+	cfg.crash1((leader + 0) % servers)          //断leader
+	cfg.crash1((leader + 1) % servers)          //断leader+1
+	cfg.connect((leader + 2) % servers)         //重连leader+2
+	cfg.start1((leader+0)%servers, cfg.applier) //重连leader
 	cfg.connect((leader + 0) % servers)
 
 	cfg.one(103, 2, true)
@@ -802,7 +798,6 @@ func TestPersist32C(t *testing.T) {
 	cfg.end()
 }
 
-//
 // Test the scenarios described in Figure 8 of the extended Raft paper. Each
 // iteration asks a leader, if there is one, to insert a command in the Raft
 // log.  If there is a leader, that leader will fail quickly with a high
@@ -811,7 +806,6 @@ func TestPersist32C(t *testing.T) {
 // alive servers isn't enough to form a majority, perhaps start a new server.
 // The leader in a new term may try to finish replicating log entries that
 // haven't been committed yet.
-//
 func TestFigure82C(t *testing.T) {
 	servers := 5
 	cfg := make_config(t, servers, false, false)
@@ -1192,11 +1186,9 @@ func TestSnapshotInstallUnCrash2D(t *testing.T) {
 	snapcommon(t, "Test (2D): install snapshots (unreliable+crash)", false, false, true)
 }
 
-//
 // do the servers persist the snapshots, and
 // restart using snapshot along with the
 // tail of the log?
-//
 func TestSnapshotAllCrash2D(t *testing.T) {
 	servers := 3
 	iters := 5

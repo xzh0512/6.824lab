@@ -1,0 +1,821 @@
+Test (2C): unreliable agreement ...
+003291 TIMR [	    func-ticker-rf(2)		] :选举超时了, 我的身份是:0,我的voteFor:-1
+003293 TIMR [	    func-electionEvent-rf(2)		] : rf.Term: 0
+003305 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:0,阻塞时长>5ms
+003382 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:1,阻塞时长>5ms
+003393 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:3,阻塞时长>5ms
+003404 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:4,阻塞时长>5ms
+003405 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:1,我的voteFor:2
+003405 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:1,我的voteFor:2
+003448 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S2, 我的身份是:0,我的任期:0，lastterm:0,lastlogindex:0
+003449 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:0,我的voteFor:2
+003489 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S2, 我的身份是:0,我的任期:0，lastterm:0,lastlogindex:0
+003490 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:0,我的voteFor:2
+003547 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S2, 我的身份是:0,我的任期:0，lastterm:0,lastlogindex:0
+003548 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:0,我的voteFor:2
+003580 TIMR [	    func-ticker-rf(3)		] :选举超时了, 我的身份是:0,我的voteFor:-1
+003580 TIMR [	    func-electionEvent-rf(3)		] : rf.Term: 0
+003591 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:0,阻塞时长>5ms
+003603 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:1,阻塞时长>5ms
+003615 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:2,阻塞时长>5ms
+003627 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S3, 我的身份是:0,我的任期:1，lastterm:0,lastlogindex:0
+003627 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:4,阻塞时长>5ms
+003627 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:1,我的voteFor:3
+003627 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:1,我的voteFor:3
+003714 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S3, 我的身份是:1,我的任期:1，lastterm:0,lastlogindex:0
+003737 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S3, 我的身份是:0,我的任期:1，lastterm:0,lastlogindex:0
+003820 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S3, 我的身份是:0,我的任期:1，lastterm:0,lastlogindex:0
+003887 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S3, 我的身份是:0,我的任期:1，lastterm:0,lastlogindex:0
+006778 TIMR [	    func-ticker-rf(1)		] :选举超时了, 我的身份是:0,我的voteFor:2
+006779 TIMR [	    func-electionEvent-rf(1)		] : rf.Term: 1
+006780 TIMR [	    func-ticker-rf(0)		] :选举超时了, 我的身份是:0,我的voteFor:2
+006781 TIMR [	    func-electionEvent-rf(0)		] : rf.Term: 1
+006801 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:0,阻塞时长>5ms
+006802 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:1,阻塞时长>5ms
+006813 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:2,阻塞时长>5ms
+006813 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:2,阻塞时长>5ms
+006814 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S1, 我的身份是:1,我的任期:2，lastterm:0,lastlogindex:0
+006825 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:3,阻塞时长>5ms
+006825 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:3,阻塞时长>5ms
+006836 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:4,阻塞时长>5ms
+006837 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:1,我的voteFor:1
+006837 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:4,阻塞时长>5ms
+006837 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:1,我的voteFor:1
+006837 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:1,我的voteFor:0
+006838 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S0, 我的身份是:1,我的任期:2，lastterm:0,lastlogindex:0
+006838 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:1,我的voteFor:0
+006872 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S0, 我的身份是:0,我的任期:1，lastterm:0,lastlogindex:0
+006874 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:0,我的voteFor:0
+006934 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S1, 我的身份是:1,我的任期:1，lastterm:0,lastlogindex:0
+006936 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:0,我的voteFor:1
+006946 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S1, 我的身份是:1,我的任期:1，lastterm:0,lastlogindex:0
+006948 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S1, 我的身份是:0,我的任期:2，lastterm:0,lastlogindex:0
+006949 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:0,我的voteFor:1
+006949 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:0,我的voteFor:1
+006990 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S0, 我的身份是:0,我的任期:2，lastterm:0,lastlogindex:0
+007001 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S0, 我的身份是:0,我的任期:2，lastterm:0,lastlogindex:0
+007027 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S1, 我的身份是:0,我的任期:2，lastterm:0,lastlogindex:0
+009982 TIMR [	    func-ticker-rf(3)		] :选举超时了, 我的身份是:0,我的voteFor:1
+009984 TIMR [	    func-electionEvent-rf(3)		] : rf.Term: 2
+009997 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:0,阻塞时长>5ms
+010010 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:1,阻塞时长>5ms
+010022 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:2,阻塞时长>5ms
+010034 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:4,阻塞时长>5ms
+010034 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:1,我的voteFor:3
+010035 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:1,我的voteFor:3
+010047 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S3, 我的身份是:0,我的任期:2，lastterm:0,lastlogindex:0
+010049 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:0,我的voteFor:3
+010147 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S3, 我的身份是:1,我的任期:2，lastterm:0,lastlogindex:0
+010149 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:0,我的voteFor:3
+010198 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S3, 我的身份是:0,我的任期:2，lastterm:0,lastlogindex:0
+010200 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:0,我的voteFor:3
+010221 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S3, 我的身份是:1,我的任期:2，lastterm:0,lastlogindex:0
+010223 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:0,我的voteFor:3
+013238 TIMR [	    func-ticker-rf(3)		] :选举超时了, 我的身份是:1,我的voteFor:3
+013239 TIMR [	    func-electionEvent-rf(3)		] : rf.Term: 3
+013251 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:0,阻塞时长>5ms
+013262 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:1,阻塞时长>5ms
+013274 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:2,阻塞时长>5ms
+013286 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:4,阻塞时长>5ms
+013287 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:1,我的voteFor:3
+013287 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:1,我的voteFor:3
+013349 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S3, 我的身份是:0,我的任期:3，lastterm:0,lastlogindex:0
+013351 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:0,我的voteFor:3
+013372 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S3, 我的身份是:0,我的任期:3，lastterm:0,lastlogindex:0
+013374 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:0,我的voteFor:3
+013455 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S3, 我的身份是:0,我的任期:3，lastterm:0,lastlogindex:0
+013455 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S3, 我的身份是:0,我的任期:3，lastterm:0,lastlogindex:0
+013456 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:0,我的voteFor:3
+013456 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:0,我的voteFor:3
+016372 TIMR [	    func-ticker-rf(3)		] :选举超时了, 我的身份是:1,我的voteFor:3
+016374 TIMR [	    func-electionEvent-rf(3)		] : rf.Term: 4
+016388 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:0,阻塞时长>5ms
+016402 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:1,阻塞时长>5ms
+016417 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:2,阻塞时长>5ms
+016418 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S3, 我的身份是:0,我的任期:4，lastterm:0,lastlogindex:0
+016420 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:0,我的voteFor:3
+016431 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:4,阻塞时长>5ms
+016431 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:1,我的voteFor:3
+016432 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:1,我的voteFor:3
+016462 TIMR [	    func-ticker-rf(2)		] :选举超时了, 我的身份是:0,我的voteFor:3
+016462 TIMR [	    func-electionEvent-rf(2)		] : rf.Term: 4
+016476 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:0,阻塞时长>5ms
+016489 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:1,阻塞时长>5ms
+016503 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:3,阻塞时长>5ms
+016516 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:4,阻塞时长>5ms
+016517 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:1,我的voteFor:2
+016517 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:1,我的voteFor:2
+016540 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S3, 我的身份是:1,我的任期:5，lastterm:0,lastlogindex:0
+016540 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S2, 我的身份是:0,我的任期:4，lastterm:0,lastlogindex:0
+016541 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:0,我的voteFor:2
+016564 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S3, 我的身份是:0,我的任期:5，lastterm:0,lastlogindex:0
+016588 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S2, 我的身份是:0,我的任期:5，lastterm:0,lastlogindex:0
+016671 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S3, 我的身份是:0,我的任期:4，lastterm:0,lastlogindex:0
+016672 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:0,我的voteFor:3
+016705 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S2, 我的身份是:1,我的任期:5，lastterm:0,lastlogindex:0
+016768 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S2, 我的身份是:0,我的任期:5，lastterm:0,lastlogindex:0
+016862 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S2, 我的身份是:0,我的任期:5，lastterm:0,lastlogindex:0
+016987 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S2, 我的身份是:0,我的任期:5，lastterm:0,lastlogindex:0
+019828 TIMR [	    func-ticker-rf(0)		] :选举超时了, 我的身份是:0,我的voteFor:2
+019829 TIMR [	    func-electionEvent-rf(0)		] : rf.Term: 5
+019832 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S0, 我的身份是:0,我的任期:5，lastterm:0,lastlogindex:0
+019834 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器投票回复:1, 对方是否为我投票:true
+019834 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:0,我的voteFor:0
+019853 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:2,阻塞时长>5ms
+019866 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:3,阻塞时长>5ms
+019868 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S0, 我的身份是:1,我的任期:5，lastterm:0,lastlogindex:0
+019869 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:0,我的voteFor:0
+019879 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:4,阻塞时长>5ms
+019879 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:1,我的voteFor:0
+019879 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:1,我的voteFor:0
+020018 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S0, 我的身份是:1,我的任期:5，lastterm:0,lastlogindex:0
+020019 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:0,我的voteFor:0
+020064 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S0, 我的身份是:0,我的任期:6，lastterm:0,lastlogindex:0
+020066 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:0,我的voteFor:0
+020622 TIMR [	    func-ticker-rf(4)		] :选举超时了, 我的身份是:0,我的voteFor:3
+020623 TIMR [	    func-electionEvent-rf(4)		] : rf.Term: 5
+020637 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:0,阻塞时长>5ms
+020650 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:1,阻塞时长>5ms
+020663 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:2,阻塞时长>5ms
+020675 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:3,阻塞时长>5ms
+020675 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:1,我的voteFor:4
+020675 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:1,我的voteFor:4
+020678 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S4, 我的身份是:0,我的任期:6，lastterm:0,lastlogindex:0
+020854 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S4, 我的身份是:0,我的任期:6，lastterm:0,lastlogindex:0
+020910 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S4, 我的身份是:0,我的任期:6，lastterm:0,lastlogindex:0
+023083 TIMR [	    func-ticker-rf(1)		] :选举超时了, 我的身份是:0,我的voteFor:0
+023085 TIMR [	    func-electionEvent-rf(1)		] : rf.Term: 6
+023099 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:0,阻塞时长>5ms
+023112 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:2,阻塞时长>5ms
+023124 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:3,阻塞时长>5ms
+023135 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:4,阻塞时长>5ms
+023136 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:1,我的voteFor:1
+023136 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:1,我的voteFor:1
+023189 TIMR [	    func-ticker-rf(2)		] :选举超时了, 我的身份是:0,我的voteFor:0
+023190 TIMR [	    func-electionEvent-rf(2)		] : rf.Term: 6
+023203 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:0,阻塞时长>5ms
+023217 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:1,阻塞时长>5ms
+023219 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S1, 我的身份是:1,我的任期:6，lastterm:0,lastlogindex:0
+023221 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:0,我的voteFor:1
+023229 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:3,阻塞时长>5ms
+023241 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:4,阻塞时长>5ms
+023241 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:1,我的voteFor:2
+023241 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:1,我的voteFor:2
+023243 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S2, 我的身份是:0,我的任期:6，lastterm:0,lastlogindex:0
+023245 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:0,我的voteFor:2
+023308 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S2, 我的身份是:0,我的任期:7，lastterm:0,lastlogindex:0
+023308 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S1, 我的身份是:1,我的任期:7，lastterm:0,lastlogindex:0
+023343 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S2, 我的身份是:1,我的任期:6，lastterm:0,lastlogindex:0
+023343 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:0,我的voteFor:2
+023374 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S1, 我的身份是:0,我的任期:7，lastterm:0,lastlogindex:0
+023375 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S1, 我的身份是:0,我的任期:7，lastterm:0,lastlogindex:0
+023428 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S2, 我的身份是:1,我的任期:7，lastterm:0,lastlogindex:0
+023461 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S2, 我的身份是:0,我的任期:7，lastterm:0,lastlogindex:0
+023463 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:0,我的voteFor:2
+026397 TIMR [	    func-ticker-rf(0)		] :选举超时了, 我的身份是:0,我的voteFor:1
+026398 TIMR [	    func-electionEvent-rf(0)		] : rf.Term: 7
+026411 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:1,阻塞时长>5ms
+026424 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:2,阻塞时长>5ms
+026437 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:3,阻塞时长>5ms
+026449 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:4,阻塞时长>5ms
+026449 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:1,我的voteFor:0
+026449 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:1,我的voteFor:0
+026450 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S0, 我的身份是:1,我的任期:7，lastterm:0,lastlogindex:0
+026451 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:0,我的voteFor:0
+026492 TIMR [	    func-ticker-rf(1)		] :选举超时了, 我的身份是:1,我的voteFor:1
+026493 TIMR [	    func-electionEvent-rf(1)		] : rf.Term: 7
+026505 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:0,阻塞时长>5ms
+026517 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:2,阻塞时长>5ms
+026530 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:3,阻塞时长>5ms
+026530 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S1, 我的身份是:1,我的任期:8，lastterm:0,lastlogindex:0
+026542 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:4,阻塞时长>5ms
+026543 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:1,我的voteFor:1
+026543 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:1,我的voteFor:1
+026556 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S0, 我的身份是:0,我的任期:7，lastterm:0,lastlogindex:0
+026557 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:0,我的voteFor:0
+026567 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S0, 我的身份是:1,我的任期:8，lastterm:0,lastlogindex:0
+026579 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S1, 我的身份是:0,我的任期:7，lastterm:0,lastlogindex:0
+026580 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:0,我的voteFor:1
+026665 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S0, 我的身份是:0,我的任期:8，lastterm:0,lastlogindex:0
+026719 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S1, 我的身份是:0,我的任期:8，lastterm:0,lastlogindex:0
+026719 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S1, 我的身份是:0,我的任期:8，lastterm:0,lastlogindex:0
+029988 TIMR [	    func-ticker-rf(2)		] :选举超时了, 我的身份是:0,我的voteFor:0
+029990 TIMR [	    func-electionEvent-rf(2)		] : rf.Term: 8
+030011 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:0,阻塞时长>5ms
+030023 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:1,阻塞时长>5ms
+030034 TIMR [	    func-ticker-rf(3)		] :选举超时了, 我的身份是:0,我的voteFor:1
+030034 TIMR [	    func-electionEvent-rf(3)		] : rf.Term: 8
+030035 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:3,阻塞时长>5ms
+030046 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:0,阻塞时长>5ms
+030047 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:4,阻塞时长>5ms
+030047 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:1,我的voteFor:2
+030047 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:1,我的voteFor:2
+030058 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:1,阻塞时长>5ms
+030070 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:2,阻塞时长>5ms
+030082 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:4,阻塞时长>5ms
+030083 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:1,我的voteFor:3
+030083 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:1,我的voteFor:3
+030083 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S3, 我的身份是:0,我的任期:8，lastterm:0,lastlogindex:0
+030084 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:0,我的voteFor:3
+030095 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S2, 我的身份是:1,我的任期:8，lastterm:0,lastlogindex:0
+030096 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:0,我的voteFor:2
+030107 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S3, 我的身份是:1,我的任期:8，lastterm:0,lastlogindex:0
+030109 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:0,我的voteFor:3
+030173 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S2, 我的身份是:0,我的任期:9，lastterm:0,lastlogindex:0
+030186 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S3, 我的身份是:0,我的任期:9，lastterm:0,lastlogindex:0
+030186 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S2, 我的身份是:1,我的任期:9，lastterm:0,lastlogindex:0
+030231 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S3, 我的身份是:1,我的任期:9，lastterm:0,lastlogindex:0
+030304 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S2, 我的身份是:0,我的任期:9，lastterm:0,lastlogindex:0
+033136 TIMR [	    func-ticker-rf(2)		] :选举超时了, 我的身份是:1,我的voteFor:2
+033137 TIMR [	    func-electionEvent-rf(2)		] : rf.Term: 9
+033151 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:0,阻塞时长>5ms
+033164 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:1,阻塞时长>5ms
+033177 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:3,阻塞时长>5ms
+033190 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:4,阻塞时长>5ms
+033190 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:1,我的voteFor:2
+033190 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:1,我的voteFor:2
+033255 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S2, 我的身份是:1,我的任期:9，lastterm:0,lastlogindex:0
+033257 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:0,我的voteFor:2
+033309 TIMR [	    func-ticker-rf(1)		] :选举超时了, 我的身份是:0,我的voteFor:3
+033309 TIMR [	    func-electionEvent-rf(1)		] : rf.Term: 9
+033309 TIMR [	    func-ticker-rf(0)		] :选举超时了, 我的身份是:0,我的voteFor:2
+033310 TIMR [	    func-electionEvent-rf(0)		] : rf.Term: 9
+033309 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S2, 我的身份是:0,我的任期:9，lastterm:0,lastlogindex:0
+033322 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:0,阻塞时长>5ms
+033324 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:1,阻塞时长>5ms
+033335 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:2,阻塞时长>5ms
+033335 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:2,阻塞时长>5ms
+033336 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S2, 我的身份是:0,我的任期:9，lastterm:0,lastlogindex:0
+033337 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:0,我的voteFor:2
+033348 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:3,阻塞时长>5ms
+033349 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:3,阻塞时长>5ms
+033361 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:4,阻塞时长>5ms
+033361 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:1,我的voteFor:0
+033361 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:1,我的voteFor:0
+033361 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:1,我的voteFor:0
+033361 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:4,阻塞时长>5ms
+033361 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:1,我的voteFor:1
+033362 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:1,我的voteFor:1
+033362 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S2, 我的身份是:1,我的任期:10，lastterm:0,lastlogindex:0
+033375 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S1, 我的身份是:0,我的任期:10，lastterm:0,lastlogindex:0
+033388 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S1, 我的身份是:0,我的任期:10，lastterm:0,lastlogindex:0
+033432 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S0, 我的身份是:0,我的任期:10，lastterm:0,lastlogindex:0
+033432 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S0, 我的身份是:1,我的任期:10，lastterm:0,lastlogindex:0
+033433 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:0,我的voteFor:0
+033433 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:0,我的voteFor:0
+033505 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S1, 我的身份是:0,我的任期:11，lastterm:0,lastlogindex:0
+033516 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S0, 我的身份是:1,我的任期:10，lastterm:0,lastlogindex:0
+033517 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:0,我的voteFor:0
+033527 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S1, 我的身份是:1,我的任期:11，lastterm:0,lastlogindex:0
+033528 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S1, 我的身份是:0,我的任期:10，lastterm:0,lastlogindex:0
+036439 TIMR [	    func-ticker-rf(4)		] :选举超时了, 我的身份是:0,我的voteFor:2
+036440 TIMR [	    func-electionEvent-rf(4)		] : rf.Term: 10
+036453 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:0,阻塞时长>5ms
+036464 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:1,阻塞时长>5ms
+036476 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:2,阻塞时长>5ms
+036489 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:3,阻塞时长>5ms
+036489 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:1,我的voteFor:4
+036490 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:1,我的voteFor:4
+036554 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S4, 我的身份是:0,我的任期:11，lastterm:0,lastlogindex:0
+036575 TIMR [	    func-ticker-rf(1)		] :选举超时了, 我的身份是:0,我的voteFor:0
+036575 TIMR [	    func-electionEvent-rf(1)		] : rf.Term: 11
+036577 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S1, 我的身份是:1,我的任期:11，lastterm:0,lastlogindex:0
+036577 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器投票回复:0, 对方是否为我投票:true
+036578 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:0,我的voteFor:1
+036589 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:2,阻塞时长>5ms
+036590 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S4, 我的身份是:0,我的任期:11，lastterm:0,lastlogindex:0
+036601 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:3,阻塞时长>5ms
+036614 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:4,阻塞时长>5ms
+036614 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:1,我的voteFor:1
+036615 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S1, 我的身份是:0,我的任期:11，lastterm:0,lastlogindex:0
+036615 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:1,我的voteFor:1
+036616 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:0,我的voteFor:1
+036627 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S4, 我的身份是:1,我的任期:12，lastterm:0,lastlogindex:0
+036640 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S4, 我的身份是:0,我的任期:12，lastterm:0,lastlogindex:0
+036662 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S1, 我的身份是:1,我的任期:11，lastterm:0,lastlogindex:0
+036664 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:0,我的voteFor:1
+036861 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S4, 我的身份是:0,我的任期:12，lastterm:0,lastlogindex:0
+036925 TIMR [	    func-ticker-rf(2)		] :选举超时了, 我的身份是:0,我的voteFor:0
+036926 TIMR [	    func-electionEvent-rf(2)		] : rf.Term: 11
+036947 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:0,阻塞时长>5ms
+036961 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:1,阻塞时长>5ms
+036973 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:3,阻塞时长>5ms
+036985 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:4,阻塞时长>5ms
+036985 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:1,我的voteFor:2
+036986 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:1,我的voteFor:2
+037001 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S1, 我的身份是:1,我的任期:12，lastterm:0,lastlogindex:0
+037033 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S2, 我的身份是:0,我的任期:12，lastterm:0,lastlogindex:0
+037121 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S2, 我的身份是:1,我的任期:12，lastterm:0,lastlogindex:0
+037145 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S2, 我的身份是:0,我的任期:12，lastterm:0,lastlogindex:0
+037228 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S2, 我的身份是:0,我的任期:12，lastterm:0,lastlogindex:0
+037272 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S2, 我的身份是:0,我的任期:12，lastterm:0,lastlogindex:0
+039799 TIMR [	    func-ticker-rf(0)		] :选举超时了, 我的身份是:0,我的voteFor:1
+039800 TIMR [	    func-electionEvent-rf(0)		] : rf.Term: 12
+039813 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:1,阻塞时长>5ms
+039825 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:2,阻塞时长>5ms
+039837 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:3,阻塞时长>5ms
+039838 TIMR [	    func-ticker-rf(4)		] :选举超时了, 我的身份是:0,我的voteFor:1
+039838 TIMR [	    func-electionEvent-rf(4)		] : rf.Term: 12
+039840 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S0, 我的身份是:0,我的任期:12，lastterm:0,lastlogindex:0
+039842 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:0,我的voteFor:0
+039850 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:0,阻塞时长>5ms
+039850 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:4,阻塞时长>5ms
+039850 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:1,我的voteFor:0
+039851 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:1,我的voteFor:0
+039862 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:1,阻塞时长>5ms
+039874 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:2,阻塞时长>5ms
+039886 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:3,阻塞时长>5ms
+039887 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:1,我的voteFor:4
+039887 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S0, 我的身份是:1,我的任期:13，lastterm:0,lastlogindex:0
+039887 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S4, 我的身份是:0,我的任期:13，lastterm:0,lastlogindex:0
+039887 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:1,我的voteFor:4
+039888 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S4, 我的身份是:0,我的任期:13，lastterm:0,lastlogindex:0
+039912 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S4, 我的身份是:1,我的任期:12，lastterm:0,lastlogindex:0
+039914 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:0,我的voteFor:4
+040074 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S4, 我的身份是:1,我的任期:13，lastterm:0,lastlogindex:0
+040118 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S4, 我的身份是:1,我的任期:12，lastterm:0,lastlogindex:0
+040119 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:0,我的voteFor:4
+040129 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S0, 我的身份是:0,我的任期:13，lastterm:0,lastlogindex:0
+040151 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S4, 我的身份是:0,我的任期:13，lastterm:0,lastlogindex:0
+040152 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:0,我的voteFor:4
+040235 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S0, 我的身份是:0,我的任期:13，lastterm:0,lastlogindex:0
+042964 TIMR [	    func-ticker-rf(1)		] :选举超时了, 我的身份是:0,我的voteFor:4
+042965 TIMR [	    func-electionEvent-rf(1)		] : rf.Term: 13
+042978 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:0,阻塞时长>5ms
+042991 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:2,阻塞时长>5ms
+043003 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:3,阻塞时长>5ms
+043015 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:4,阻塞时长>5ms
+043016 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:1,我的voteFor:1
+043016 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:1,我的voteFor:1
+043131 TIMR [	    func-ticker-rf(4)		] :选举超时了, 我的身份是:1,我的voteFor:4
+043132 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S1, 我的身份是:0,我的任期:13，lastterm:0,lastlogindex:0
+043132 TIMR [	    func-electionEvent-rf(4)		] : rf.Term: 13
+043133 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:0,我的voteFor:1
+043144 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:0,阻塞时长>5ms
+043144 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S1, 我的身份是:1,我的任期:13，lastterm:0,lastlogindex:0
+043145 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S4, 我的身份是:0,我的任期:14，lastterm:0,lastlogindex:0
+043145 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:0,我的voteFor:1
+043156 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:1,阻塞时长>5ms
+043170 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:2,阻塞时长>5ms
+043182 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S4, 我的身份是:0,我的任期:14，lastterm:0,lastlogindex:0
+043183 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:3,阻塞时长>5ms
+043183 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:1,我的voteFor:4
+043183 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S1, 我的身份是:1,我的任期:14，lastterm:0,lastlogindex:0
+043183 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:1,我的voteFor:4
+043217 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S4, 我的身份是:1,我的任期:14，lastterm:0,lastlogindex:0
+043240 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S1, 我的身份是:0,我的任期:13，lastterm:0,lastlogindex:0
+043242 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:0,我的voteFor:1
+043315 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S4, 我的身份是:0,我的任期:14，lastterm:0,lastlogindex:0
+046439 TIMR [	    func-ticker-rf(4)		] :选举超时了, 我的身份是:1,我的voteFor:4
+046440 TIMR [	    func-electionEvent-rf(4)		] : rf.Term: 14
+046442 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S4, 我的身份是:0,我的任期:14，lastterm:0,lastlogindex:0
+046443 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:0,我的voteFor:4
+046443 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器投票回复:0, 对方是否为我投票:true
+046464 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:1,阻塞时长>5ms
+046475 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:2,阻塞时长>5ms
+046487 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:3,阻塞时长>5ms
+046487 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:1,我的voteFor:4
+046487 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:1,我的voteFor:4
+046531 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S4, 我的身份是:0,我的任期:14，lastterm:0,lastlogindex:0
+046532 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:0,我的voteFor:4
+046636 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S4, 我的身份是:1,我的任期:14，lastterm:0,lastlogindex:0
+046639 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:0,我的voteFor:4
+046670 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S4, 我的身份是:0,我的任期:14，lastterm:0,lastlogindex:0
+046672 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:0,我的voteFor:4
+046792 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S4, 我的身份是:0,我的任期:15，lastterm:0,lastlogindex:0
+046794 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:0,我的voteFor:4
+049540 TIMR [	    func-ticker-rf(0)		] :选举超时了, 我的身份是:0,我的voteFor:4
+049541 TIMR [	    func-electionEvent-rf(0)		] : rf.Term: 15
+049554 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:1,阻塞时长>5ms
+049557 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S0, 我的身份是:0,我的任期:15，lastterm:0,lastlogindex:0
+049558 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器投票回复:2, 对方是否为我投票:true
+049559 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:0,我的voteFor:0
+049578 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:3,阻塞时长>5ms
+049590 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:4,阻塞时长>5ms
+049590 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:1,我的voteFor:0
+049590 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:1,我的voteFor:0
+049602 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S0, 我的身份是:0,我的任期:15，lastterm:0,lastlogindex:0
+049604 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:0,我的voteFor:0
+049614 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S0, 我的身份是:0,我的任期:15，lastterm:0,lastlogindex:0
+049616 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:0,我的voteFor:0
+049851 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S0, 我的身份是:1,我的任期:15，lastterm:0,lastlogindex:0
+049853 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:0,我的voteFor:0
+052590 TIMR [	    func-ticker-rf(2)		] :选举超时了, 我的身份是:0,我的voteFor:0
+052592 TIMR [	    func-electionEvent-rf(2)		] : rf.Term: 16
+052605 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:0,阻塞时长>5ms
+052619 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:1,阻塞时长>5ms
+052630 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:3,阻塞时长>5ms
+052642 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:4,阻塞时长>5ms
+052643 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:1,我的voteFor:2
+052643 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:1,我的voteFor:2
+052798 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S2, 我的身份是:0,我的任期:16，lastterm:0,lastlogindex:0
+052800 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:0,我的voteFor:2
+052809 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S2, 我的身份是:1,我的任期:16，lastterm:0,lastlogindex:0
+052810 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S2, 我的身份是:0,我的任期:16，lastterm:0,lastlogindex:0
+052811 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:0,我的voteFor:2
+052811 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:0,我的voteFor:2
+052853 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S2, 我的身份是:0,我的任期:16，lastterm:0,lastlogindex:0
+052855 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:0,我的voteFor:2
+055863 TIMR [	    func-ticker-rf(1)		] :选举超时了, 我的身份是:0,我的voteFor:2
+055865 TIMR [	    func-electionEvent-rf(1)		] : rf.Term: 17
+055876 TIMR [	    func-ticker-rf(0)		] :选举超时了, 我的身份是:0,我的voteFor:2
+055884 TIMR [	    func-electionEvent-rf(0)		] : rf.Term: 17
+055896 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:1,阻塞时长>5ms
+055896 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:0,阻塞时长>5ms
+055908 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:2,阻塞时长>5ms
+055910 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:2,阻塞时长>5ms
+055921 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:3,阻塞时长>5ms
+055922 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:3,阻塞时长>5ms
+055933 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:4,阻塞时长>5ms
+055933 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:1,我的voteFor:0
+055933 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:1,我的voteFor:0
+055934 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:4,阻塞时长>5ms
+055934 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:1,我的voteFor:1
+055934 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:1,我的voteFor:1
+055948 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S0, 我的身份是:1,我的任期:18，lastterm:0,lastlogindex:0
+055949 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S0, 我的身份是:0,我的任期:17，lastterm:0,lastlogindex:0
+055950 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:0,我的voteFor:0
+056096 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S1, 我的身份是:1,我的任期:17，lastterm:0,lastlogindex:0
+056098 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:0,我的voteFor:1
+056110 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S1, 我的身份是:0,我的任期:18，lastterm:0,lastlogindex:0
+056132 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S1, 我的身份是:1,我的任期:18，lastterm:0,lastlogindex:0
+056208 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S0, 我的身份是:0,我的任期:17，lastterm:0,lastlogindex:0
+056211 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:0,我的voteFor:0
+056322 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S0, 我的身份是:0,我的任期:18，lastterm:0,lastlogindex:0
+059297 TIMR [	    func-ticker-rf(3)		] :选举超时了, 我的身份是:0,我的voteFor:0
+059299 TIMR [	    func-electionEvent-rf(3)		] : rf.Term: 18
+059313 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:0,阻塞时长>5ms
+059327 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:1,阻塞时长>5ms
+059338 TIMR [	    func-ticker-rf(0)		] :选举超时了, 我的身份是:1,我的voteFor:0
+059339 TIMR [	    func-electionEvent-rf(0)		] : rf.Term: 18
+059339 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:2,阻塞时长>5ms
+059351 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:1,阻塞时长>5ms
+059352 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:4,阻塞时长>5ms
+059353 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:1,我的voteFor:3
+059353 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:1,我的voteFor:3
+059365 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:2,阻塞时长>5ms
+059365 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S3, 我的身份是:0,我的任期:18，lastterm:0,lastlogindex:0
+059366 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:0,我的voteFor:3
+059367 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S3, 我的身份是:1,我的任期:18，lastterm:0,lastlogindex:0
+059369 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:0,我的voteFor:3
+059371 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S0, 我的身份是:0,我的任期:19，lastterm:0,lastlogindex:0
+059376 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:3,阻塞时长>5ms
+059388 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:4,阻塞时长>5ms
+059389 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:1,我的voteFor:0
+059389 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:1,我的voteFor:0
+059411 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S0, 我的身份是:0,我的任期:18，lastterm:0,lastlogindex:0
+059412 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:0,我的voteFor:0
+059487 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S0, 我的身份是:0,我的任期:19，lastterm:0,lastlogindex:0
+059503 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S0, 我的身份是:1,我的任期:19，lastterm:0,lastlogindex:0
+059529 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S3, 我的身份是:0,我的任期:19，lastterm:0,lastlogindex:0
+059568 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S3, 我的身份是:1,我的任期:19，lastterm:0,lastlogindex:0
+059649 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S3, 我的身份是:1,我的任期:19，lastterm:0,lastlogindex:0
+062539 TIMR [	    func-ticker-rf(4)		] :选举超时了, 我的身份是:0,我的voteFor:0
+062540 TIMR [	    func-electionEvent-rf(4)		] : rf.Term: 19
+062553 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:0,阻塞时长>5ms
+062565 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:1,阻塞时长>5ms
+062578 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:2,阻塞时长>5ms
+062579 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S4, 我的身份是:0,我的任期:19，lastterm:0,lastlogindex:0
+062581 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:0,我的voteFor:4
+062590 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:3,阻塞时长>5ms
+062591 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:1,我的voteFor:4
+062591 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:1,我的voteFor:4
+062717 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S4, 我的身份是:1,我的任期:19，lastterm:0,lastlogindex:0
+062719 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S4, 我的身份是:0,我的任期:19，lastterm:0,lastlogindex:0
+062719 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:0,我的voteFor:4
+062720 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:0,我的voteFor:4
+062772 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S4, 我的身份是:1,我的任期:19，lastterm:0,lastlogindex:0
+062773 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:0,我的voteFor:4
+065680 TIMR [	    func-ticker-rf(4)		] :选举超时了, 我的身份是:1,我的voteFor:4
+065681 TIMR [	    func-electionEvent-rf(4)		] : rf.Term: 20
+065694 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:0,阻塞时长>5ms
+065707 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:1,阻塞时长>5ms
+065719 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:2,阻塞时长>5ms
+065732 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:3,阻塞时长>5ms
+065733 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:1,我的voteFor:4
+065733 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:1,我的voteFor:4
+065775 TIMR [	    func-ticker-rf(1)		] :选举超时了, 我的身份是:0,我的voteFor:4
+065776 TIMR [	    func-electionEvent-rf(1)		] : rf.Term: 20
+065788 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:0,阻塞时长>5ms
+065801 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:2,阻塞时长>5ms
+065814 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S1, 我的身份是:0,我的任期:20，lastterm:0,lastlogindex:0
+065814 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:3,阻塞时长>5ms
+065814 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S1, 我的身份是:0,我的任期:20，lastterm:0,lastlogindex:0
+065815 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:0,我的voteFor:1
+065815 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:0,我的voteFor:1
+065828 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:4,阻塞时长>5ms
+065828 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:1,我的voteFor:1
+065828 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:1,我的voteFor:1
+065904 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S4, 我的身份是:0,我的任期:20，lastterm:0,lastlogindex:0
+065906 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:0,我的voteFor:4
+065907 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S4, 我的身份是:1,我的任期:21，lastterm:0,lastlogindex:0
+065916 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S1, 我的身份是:0,我的任期:21，lastterm:0,lastlogindex:0
+065927 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S4, 我的身份是:0,我的任期:21，lastterm:0,lastlogindex:0
+065950 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S4, 我的身份是:0,我的任期:21，lastterm:0,lastlogindex:0
+066027 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S4, 我的身份是:0,我的任期:21，lastterm:0,lastlogindex:0
+068861 TIMR [	    func-ticker-rf(4)		] :选举超时了, 我的身份是:1,我的voteFor:4
+068861 TIMR [	    func-electionEvent-rf(4)		] : rf.Term: 21
+068872 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:0,阻塞时长>5ms
+068883 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:1,阻塞时长>5ms
+068884 TIMR [	    func-ticker-rf(1)		] :选举超时了, 我的身份是:1,我的voteFor:1
+068884 TIMR [	    func-electionEvent-rf(1)		] : rf.Term: 21
+068895 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:0,阻塞时长>5ms
+068895 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:2,阻塞时长>5ms
+068906 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:2,阻塞时长>5ms
+068907 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:3,阻塞时长>5ms
+068907 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:1,我的voteFor:4
+068907 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:1,我的voteFor:4
+068919 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:3,阻塞时长>5ms
+068920 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S1, 我的身份是:0,我的任期:21，lastterm:0,lastlogindex:0
+068921 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:0,我的voteFor:1
+068930 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:4,阻塞时长>5ms
+068930 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:1,我的voteFor:1
+068930 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:1,我的voteFor:1
+068964 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S4, 我的身份是:0,我的任期:21，lastterm:0,lastlogindex:0
+068964 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:0,我的voteFor:4
+068977 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S1, 我的身份是:1,我的任期:22，lastterm:0,lastlogindex:0
+069028 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S1, 我的身份是:0,我的任期:22，lastterm:0,lastlogindex:0
+069061 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S4, 我的身份是:1,我的任期:22，lastterm:0,lastlogindex:0
+069083 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S1, 我的身份是:0,我的任期:21，lastterm:0,lastlogindex:0
+069084 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:0,我的voteFor:1
+069096 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S4, 我的身份是:0,我的任期:22，lastterm:0,lastlogindex:0
+069127 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S4, 我的身份是:0,我的任期:22，lastterm:0,lastlogindex:0
+069129 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S1, 我的身份是:1,我的任期:22，lastterm:0,lastlogindex:0
+069172 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S4, 我的身份是:1,我的任期:22，lastterm:0,lastlogindex:0
+072201 TIMR [	    func-ticker-rf(1)		] :选举超时了, 我的身份是:1,我的voteFor:1
+072202 TIMR [	    func-electionEvent-rf(1)		] : rf.Term: 22
+072216 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:0,阻塞时长>5ms
+072228 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:2,阻塞时长>5ms
+072244 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:3,阻塞时长>5ms
+072258 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:4,阻塞时长>5ms
+072259 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:1,我的voteFor:1
+072259 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:1,我的voteFor:1
+072261 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S1, 我的身份是:0,我的任期:22，lastterm:0,lastlogindex:0
+072264 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:0,我的voteFor:1
+072315 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S1, 我的身份是:1,我的任期:22，lastterm:0,lastlogindex:0
+072317 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:0,我的voteFor:1
+072338 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S1, 我的身份是:0,我的任期:22，lastterm:0,lastlogindex:0
+072339 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:0,我的voteFor:1
+072429 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S1, 我的身份是:0,我的任期:22，lastterm:0,lastlogindex:0
+072430 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:0,我的voteFor:1
+075422 TIMR [	    func-ticker-rf(1)		] :选举超时了, 我的身份是:1,我的voteFor:1
+075423 TIMR [	    func-electionEvent-rf(1)		] : rf.Term: 23
+075434 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:0,阻塞时长>5ms
+075446 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:2,阻塞时长>5ms
+075457 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:3,阻塞时长>5ms
+075458 TIMR [	    func-ticker-rf(4)		] :选举超时了, 我的身份是:0,我的voteFor:1
+075458 TIMR [	    func-electionEvent-rf(4)		] : rf.Term: 23
+075469 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:4,阻塞时长>5ms
+075470 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:1,我的voteFor:1
+075470 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:1,我的voteFor:1
+075470 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:0,阻塞时长>5ms
+075482 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:1,阻塞时长>5ms
+075494 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:2,阻塞时长>5ms
+075507 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:3,阻塞时长>5ms
+075507 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:1,我的voteFor:4
+075507 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:1,我的voteFor:4
+075541 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S1, 我的身份是:0,我的任期:23，lastterm:0,lastlogindex:0
+075542 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:0,我的voteFor:1
+075588 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S1, 我的身份是:0,我的任期:23，lastterm:0,lastlogindex:0
+075589 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:0,我的voteFor:1
+075633 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S4, 我的身份是:0,我的任期:24，lastterm:0,lastlogindex:0
+075633 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S4, 我的身份是:0,我的任期:24，lastterm:0,lastlogindex:0
+075633 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S1, 我的身份是:0,我的任期:23，lastterm:0,lastlogindex:0
+075634 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:0,我的voteFor:1
+075715 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S4, 我的身份是:0,我的任期:24，lastterm:0,lastlogindex:0
+075727 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S4, 我的身份是:1,我的任期:24，lastterm:0,lastlogindex:0
+075727 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S1, 我的身份是:1,我的任期:24，lastterm:0,lastlogindex:0
+078791 TIMR [	    func-ticker-rf(0)		] :选举超时了, 我的身份是:0,我的voteFor:1
+078792 TIMR [	    func-electionEvent-rf(0)		] : rf.Term: 24
+078805 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:1,阻塞时长>5ms
+078816 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:2,阻塞时长>5ms
+078828 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:3,阻塞时长>5ms
+078829 TIMR [	    func-ticker-rf(3)		] :选举超时了, 我的身份是:0,我的voteFor:1
+078829 TIMR [	    func-electionEvent-rf(3)		] : rf.Term: 24
+078829 TIMR [	    func-ticker-rf(2)		] :选举超时了, 我的身份是:0,我的voteFor:1
+078830 TIMR [	    func-electionEvent-rf(2)		] : rf.Term: 24
+078830 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S0, 我的身份是:1,我的任期:24，lastterm:0,lastlogindex:0
+078831 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:0,我的voteFor:0
+078840 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:0,阻塞时长>5ms
+078841 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:4,阻塞时长>5ms
+078842 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:1,我的voteFor:0
+078842 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:1,我的voteFor:0
+078842 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:0,阻塞时长>5ms
+078855 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:1,阻塞时长>5ms
+078856 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:1,阻塞时长>5ms
+078868 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:2,阻塞时长>5ms
+078868 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:3,阻塞时长>5ms
+078871 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S2, 我的身份是:1,我的任期:24，lastterm:0,lastlogindex:0
+078873 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器投票回复:4, 对方是否为我投票:true
+078873 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:1,我的voteFor:2
+078873 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:1,我的voteFor:2
+078873 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:0,我的voteFor:2
+078874 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S2, 我的身份是:0,我的任期:25，lastterm:0,lastlogindex:0
+078880 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:4,阻塞时长>5ms
+078881 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:1,我的voteFor:3
+078881 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S0, 我的身份是:1,我的任期:25，lastterm:0,lastlogindex:0
+078882 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:1,我的voteFor:3
+078914 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S3, 我的身份是:0,我的任期:25，lastterm:0,lastlogindex:0
+078960 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S3, 我的身份是:1,我的任期:25，lastterm:0,lastlogindex:0
+078960 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S0, 我的身份是:0,我的任期:25，lastterm:0,lastlogindex:0
+078961 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S0, 我的身份是:1,我的任期:25，lastterm:0,lastlogindex:0
+078961 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S3, 我的身份是:0,我的任期:25，lastterm:0,lastlogindex:0
+078973 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S2, 我的身份是:1,我的任期:25，lastterm:0,lastlogindex:0
+079007 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S2, 我的身份是:1,我的任期:25，lastterm:0,lastlogindex:0
+079039 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S3, 我的身份是:1,我的任期:25，lastterm:0,lastlogindex:0
+081842 TIMR [	    func-ticker-rf(0)		] :选举超时了, 我的身份是:1,我的voteFor:0
+081844 TIMR [	    func-electionEvent-rf(0)		] : rf.Term: 25
+081854 TIMR [	    func-ticker-rf(1)		] :选举超时了, 我的身份是:0,我的voteFor:0
+081854 TIMR [	    func-electionEvent-rf(1)		] : rf.Term: 25
+081857 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:1,阻塞时长>5ms
+081869 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:0,阻塞时长>5ms
+081870 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:2,阻塞时长>5ms
+081881 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:2,阻塞时长>5ms
+081882 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:3,阻塞时长>5ms
+081894 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:4,阻塞时长>5ms
+081894 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:1,我的voteFor:0
+081894 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:1,我的voteFor:0
+081894 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:3,阻塞时长>5ms
+081908 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:4,阻塞时长>5ms
+081908 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:1,我的voteFor:1
+081908 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:1,我的voteFor:1
+081935 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S0, 我的身份是:1,我的任期:26，lastterm:0,lastlogindex:0
+081946 TIMR [	    func-ticker-rf(2)		] :选举超时了, 我的身份是:1,我的voteFor:2
+081947 TIMR [	    func-electionEvent-rf(2)		] : rf.Term: 25
+081947 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S0, 我的身份是:1,我的任期:25，lastterm:0,lastlogindex:0
+081949 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:0,我的voteFor:0
+081958 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:0,阻塞时长>5ms
+081971 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:1,阻塞时长>5ms
+081982 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:3,阻塞时长>5ms
+081982 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S2, 我的身份是:1,我的任期:26，lastterm:0,lastlogindex:0
+081994 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:4,阻塞时长>5ms
+081994 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:1,我的voteFor:2
+081994 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:1,我的voteFor:2
+082040 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S2, 我的身份是:0,我的任期:26，lastterm:0,lastlogindex:0
+082052 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S1, 我的身份是:0,我的任期:25，lastterm:0,lastlogindex:0
+082053 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:0,我的voteFor:1
+082062 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S2, 我的身份是:1,我的任期:26，lastterm:0,lastlogindex:0
+082085 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S2, 我的身份是:0,我的任期:26，lastterm:0,lastlogindex:0
+082086 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S0, 我的身份是:0,我的任期:26，lastterm:0,lastlogindex:0
+082086 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S1, 我的身份是:1,我的任期:26，lastterm:0,lastlogindex:0
+082098 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S1, 我的身份是:0,我的任期:26，lastterm:0,lastlogindex:0
+082141 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S1, 我的身份是:1,我的任期:26，lastterm:0,lastlogindex:0
+082184 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S2, 我的身份是:1,我的任期:26，lastterm:0,lastlogindex:0
+082247 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S0, 我的身份是:1,我的任期:26，lastterm:0,lastlogindex:0
+085364 TIMR [	    func-ticker-rf(3)		] :选举超时了, 我的身份是:0,我的voteFor:0
+085365 TIMR [	    func-ticker-rf(4)		] :选举超时了, 我的身份是:0,我的voteFor:1
+085366 TIMR [	    func-electionEvent-rf(4)		] : rf.Term: 26
+085365 TIMR [	    func-electionEvent-rf(3)		] : rf.Term: 26
+085380 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:0,阻塞时长>5ms
+085381 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:0,阻塞时长>5ms
+085392 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:1,阻塞时长>5ms
+085393 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:1,阻塞时长>5ms
+085405 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:2,阻塞时长>5ms
+085405 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:2,阻塞时长>5ms
+085417 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:4,阻塞时长>5ms
+085417 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:1,我的voteFor:3
+085417 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:1,我的voteFor:3
+085418 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:3,阻塞时长>5ms
+085418 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:1,我的voteFor:4
+085419 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:1,我的voteFor:4
+085451 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S4, 我的身份是:1,我的任期:26，lastterm:0,lastlogindex:0
+085452 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S3, 我的身份是:1,我的任期:27，lastterm:0,lastlogindex:0
+085453 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:0,我的voteFor:4
+085505 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S4, 我的身份是:1,我的任期:27，lastterm:0,lastlogindex:0
+085506 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S4, 我的身份是:1,我的任期:26，lastterm:0,lastlogindex:0
+085507 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:0,我的voteFor:4
+085518 TIMR [	    func-ticker-rf(1)		] :选举超时了, 我的身份是:1,我的voteFor:1
+085519 TIMR [	    func-electionEvent-rf(1)		] : rf.Term: 26
+085532 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:0,阻塞时长>5ms
+085544 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:2,阻塞时长>5ms
+085557 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:3,阻塞时长>5ms
+085569 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:4,阻塞时长>5ms
+085570 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S1, 我的身份是:0,我的任期:27，lastterm:0,lastlogindex:0
+085570 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S4, 我的身份是:1,我的任期:27，lastterm:0,lastlogindex:0
+085570 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:1,我的voteFor:1
+085571 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:1,我的voteFor:1
+085582 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S1, 我的身份是:1,我的任期:27，lastterm:0,lastlogindex:0
+085606 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S3, 我的身份是:0,我的任期:27，lastterm:0,lastlogindex:0
+085629 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S3, 我的身份是:0,我的任期:27，lastterm:0,lastlogindex:0
+085629 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S3, 我的身份是:1,我的任期:27，lastterm:0,lastlogindex:0
+085631 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S1, 我的身份是:0,我的任期:27，lastterm:0,lastlogindex:0
+085758 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S1, 我的身份是:1,我的任期:27，lastterm:0,lastlogindex:0
+085824 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S1, 我的身份是:1,我的任期:27，lastterm:0,lastlogindex:0
+088486 TIMR [	    func-ticker-rf(3)		] :选举超时了, 我的身份是:1,我的voteFor:3
+088487 TIMR [	    func-electionEvent-rf(3)		] : rf.Term: 27
+088502 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:0,阻塞时长>5ms
+088516 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:1,阻塞时长>5ms
+088529 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:2,阻塞时长>5ms
+088544 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:4,阻塞时长>5ms
+088545 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:1,我的voteFor:3
+088545 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:1,我的voteFor:3
+088568 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S3, 我的身份是:1,我的任期:27，lastterm:0,lastlogindex:0
+088571 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:0,我的voteFor:3
+088611 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S3, 我的身份是:0,我的任期:27，lastterm:0,lastlogindex:0
+088613 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:0,我的voteFor:3
+088675 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S3, 我的身份是:1,我的任期:27，lastterm:0,lastlogindex:0
+088677 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:0,我的voteFor:3
+088749 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S3, 我的身份是:0,我的任期:27，lastterm:0,lastlogindex:0
+088751 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:0,我的voteFor:3
+091733 TIMR [	    func-ticker-rf(4)		] :选举超时了, 我的身份是:0,我的voteFor:3
+091734 TIMR [	    func-electionEvent-rf(4)		] : rf.Term: 28
+091747 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:0,阻塞时长>5ms
+091760 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:1,阻塞时长>5ms
+091773 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:2,阻塞时长>5ms
+091785 TIMR [	    func-sendRequestVote-rf(4)		] :请求服务器超时了:3,阻塞时长>5ms
+091785 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:1,我的voteFor:4
+091785 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:1,我的voteFor:4
+091818 TIMR [	    func-ticker-rf(2)		] :选举超时了, 我的身份是:0,我的voteFor:3
+091819 TIMR [	    func-electionEvent-rf(2)		] : rf.Term: 28
+091820 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S4, 我的身份是:0,我的任期:28，lastterm:0,lastlogindex:0
+091822 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:0,我的voteFor:4
+091832 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:0,阻塞时长>5ms
+091845 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:1,阻塞时长>5ms
+091858 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:3,阻塞时长>5ms
+091871 TIMR [	    func-sendRequestVote-rf(2)		] :请求服务器超时了:4,阻塞时长>5ms
+091871 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:1,我的voteFor:2
+091871 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:1,我的voteFor:2
+091883 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S4, 我的身份是:0,我的任期:28，lastterm:0,lastlogindex:0
+091885 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:0,我的voteFor:4
+091886 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S4, 我的身份是:1,我的任期:29，lastterm:0,lastlogindex:0
+091886 TIMR [	    func-ticker-rf(3)		] :选举超时了, 我的身份是:1,我的voteFor:3
+091887 TIMR [	    func-electionEvent-rf(3)		] : rf.Term: 28
+091907 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:0,阻塞时长>5ms
+091920 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:1,阻塞时长>5ms
+091920 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S3, 我的身份是:0,我的任期:29，lastterm:0,lastlogindex:0
+091933 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:2,阻塞时长>5ms
+091945 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:4,阻塞时长>5ms
+091945 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:1,我的voteFor:3
+091945 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:1,我的voteFor:3
+091974 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S4, 我的身份是:1,我的任期:29，lastterm:0,lastlogindex:0
+091987 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S2, 我的身份是:0,我的任期:29，lastterm:0,lastlogindex:0
+092039 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S2, 我的身份是:1,我的任期:29，lastterm:0,lastlogindex:0
+092073 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S2, 我的身份是:0,我的任期:29，lastterm:0,lastlogindex:0
+092096 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S3, 我的身份是:0,我的任期:29，lastterm:0,lastlogindex:0
+092119 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S3, 我的身份是:1,我的任期:29，lastterm:0,lastlogindex:0
+092121 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S2, 我的身份是:1,我的任期:29，lastterm:0,lastlogindex:0
+092153 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S3, 我的身份是:1,我的任期:29，lastterm:0,lastlogindex:0
+092229 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S3, 我的身份是:0,我的任期:29，lastterm:0,lastlogindex:0
+094982 TIMR [	    func-ticker-rf(1)		] :选举超时了, 我的身份是:0,我的voteFor:4
+094984 TIMR [	    func-electionEvent-rf(1)		] : rf.Term: 29
+094997 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:0,阻塞时长>5ms
+095009 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:2,阻塞时长>5ms
+095022 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:3,阻塞时长>5ms
+095034 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:4,阻塞时长>5ms
+095034 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:1,我的voteFor:1
+095034 TIMR [	    func-ticker-rf(0)		] :选举超时了, 我的身份是:0,我的voteFor:4
+095035 TIMR [	    func-electionEvent-rf(0)		] : rf.Term: 29
+095035 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:1,我的voteFor:1
+095047 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:1,阻塞时长>5ms
+095060 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:2,阻塞时长>5ms
+095075 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:3,阻塞时长>5ms
+095077 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S1, 我的身份是:1,我的任期:29，lastterm:0,lastlogindex:0
+095080 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:0,我的voteFor:1
+095087 TIMR [	    func-sendRequestVote-rf(0)		] :请求服务器超时了:4,阻塞时长>5ms
+095089 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:1,我的voteFor:0
+095089 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:1,我的voteFor:0
+095112 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S0, 我的身份是:1,我的任期:29，lastterm:0,lastlogindex:0
+095114 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:0,我的voteFor:0
+095143 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S0, 我的身份是:0,我的任期:30，lastterm:0,lastlogindex:0
+095155 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S1, 我的身份是:1,我的任期:29，lastterm:0,lastlogindex:0
+095156 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:0,我的voteFor:1
+095214 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S1, 我的身份是:1,我的任期:30，lastterm:0,lastlogindex:0
+095215 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S1, 我的身份是:0,我的任期:30，lastterm:0,lastlogindex:0
+095216 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S0, 我的身份是:1,我的任期:30，lastterm:0,lastlogindex:0
+095312 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S0, 我的身份是:0,我的任期:30，lastterm:0,lastlogindex:0
+098405 TIMR [	    func-ticker-rf(1)		] :选举超时了, 我的身份是:1,我的voteFor:1
+098406 TIMR [	    func-electionEvent-rf(1)		] : rf.Term: 30
+098421 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:0,阻塞时长>5ms
+098434 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:2,阻塞时长>5ms
+098447 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:3,阻塞时长>5ms
+098448 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S1, 我的身份是:0,我的任期:30，lastterm:0,lastlogindex:0
+098449 TIMR [	    func-ticker-rf(2)		] :选举刷新了, 我的身份是:0,我的voteFor:1
+098460 TIMR [	    func-sendRequestVote-rf(1)		] :请求服务器超时了:4,阻塞时长>5ms
+098460 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S1, 我的身份是:0,我的任期:30，lastterm:0,lastlogindex:0
+098461 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:1,我的voteFor:1
+098461 TIMR [	    func-ticker-rf(1)		] :选举刷新了, 我的身份是:1,我的voteFor:1
+098462 TIMR [	    func-ticker-rf(4)		] :选举刷新了, 我的身份是:0,我的voteFor:1
+098494 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S1, 我的身份是:1,我的任期:30，lastterm:0,lastlogindex:0
+098495 TIMR [	    func-ticker-rf(0)		] :选举刷新了, 我的身份是:0,我的voteFor:1
+098538 TIMR [	    func-ticker-rf(3)		] :选举超时了, 我的身份是:0,我的voteFor:1
+098538 TIMR [	    func-electionEvent-rf(3)		] : rf.Term: 30
+098551 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:0,阻塞时长>5ms
+098564 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:1,阻塞时长>5ms
+098565 TIMR [	    func-RequestVote-rf(S3)		] :有人请求我投票:S1, 我的身份是:1,我的任期:31，lastterm:0,lastlogindex:0
+098565 TIMR [	    func-RequestVote-rf(S1)		] :有人请求我投票:S3, 我的身份是:1,我的任期:31，lastterm:0,lastlogindex:0
+098576 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:2,阻塞时长>5ms
+098589 TIMR [	    func-sendRequestVote-rf(3)		] :请求服务器超时了:4,阻塞时长>5ms
+098590 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:1,我的voteFor:3
+098590 TIMR [	    func-ticker-rf(3)		] :选举刷新了, 我的身份是:1,我的voteFor:3
+098668 TIMR [	    func-RequestVote-rf(S0)		] :有人请求我投票:S3, 我的身份是:0,我的任期:31，lastterm:0,lastlogindex:0
+098756 TIMR [	    func-RequestVote-rf(S2)		] :有人请求我投票:S3, 我的身份是:0,我的任期:31，lastterm:0,lastlogindex:0
+098789 TIMR [	    func-RequestVote-rf(S4)		] :有人请求我投票:S3, 我的身份是:0,我的任期:31，lastterm:0,lastlogindex:0
+--- FAIL: TestUnreliableAgree2C (10.02s)
+    config.go:609: one(102) failed to reach agreement
+    config.go:609: one(100) failed to reach agreement
+    config.go:609: one(103) failed to reach agreement
+    config.go:609: one(101) failed to reach agreement
+    config.go:609: one(1) failed to reach agreement
+FAIL
+exit status 1
+FAIL	6.824/raft	10.026s

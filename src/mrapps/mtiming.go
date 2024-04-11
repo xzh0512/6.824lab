@@ -30,12 +30,15 @@ func nparallel(phase string) int {
 	// find their PIDs by scanning directory for mr-worker-XXX files.
 	dd, err := os.Open(".")
 	if err != nil {
+		//fmt.Println("没有文件运行")
 		panic(err)
 	}
 	names, err := dd.Readdirnames(1000000)
 	if err != nil {
+		//fmt.Println("没有文件运行", names)
 		panic(err)
 	}
+	//fmt.Println("有文件运行", names)
 	ret := 0
 	for _, name := range names {
 		var xpid int
@@ -49,12 +52,14 @@ func nparallel(phase string) int {
 			}
 		}
 	}
+	//fmt.Println("存活的进程数据是:", ret)
 	dd.Close()
 
 	time.Sleep(1 * time.Second)
 
 	err = os.Remove(myfilename)
 	if err != nil {
+
 		panic(err)
 	}
 

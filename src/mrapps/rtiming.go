@@ -23,7 +23,6 @@ func nparallel(phase string) int {
 	if err != nil {
 		panic(err)
 	}
-
 	// are any other workers running?
 	// find their PIDs by scanning directory for mr-worker-XXX files.
 	dd, err := os.Open(".")
