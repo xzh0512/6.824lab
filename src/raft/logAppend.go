@@ -81,10 +81,11 @@ func (rf *Raft) sendAppendto(server int) {
 	}
 	rf.rw.Lock()
 	defer rf.rw.Unlock()
-	//todo:当前nextIndex已经被改变
+	//todo:当前nextIndex已经被改变,nextIndex摇摆问题，个人理解如果不一致就不能做这次更新操作
 	if rf.state != Leader || rf.killed() || args.Term != rf.currentTerm || reply.Term < rf.currentTerm {
 		return
 	}
+	preNext := rf.nextIndex[server]
 	if reply.Success {
 		rf.nextIndex[server] = args.PrevLogIndex + len(args.Entries) + 1
 		rf.matchIndex[server] = args.PrevLogIndex + len(args.Entries)
@@ -123,6 +124,10 @@ func (rf *Raft) sendAppendto(server int) {
 	// otherwise, it will cause out of range error
 	if rf.nextIndex[server] < 1 {
 		rf.nextIndex[server] = 1
+	}
+	//避免乱序
+	if rf.nextIndex[server] > preNext {
+		rf.nextIndex[server] = preNext
 	}
 }
 

@@ -146,10 +146,7 @@ func (rf *Raft) sendRequestVote(server int, args *RequestVoteArgs, reply *Reques
 	//h := time.Now()
 
 	ok := rf.peers[server].Call("Raft.RequestVote", args, reply)
-	for !ok {
-		if rf.killed() {
-			return
-		}
+	if !ok {
 		ok = rf.peers[server].Call("Raft.RequestVote", args, reply)
 	}
 	rf.rw.Lock()

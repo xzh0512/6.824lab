@@ -223,6 +223,7 @@ func (rf *Raft) Start(command interface{}) (int, int, bool) {
 		Term:    term,
 		Command: command,
 	})
+	rf.persist()
 	return index, term, isLeader
 }
 
